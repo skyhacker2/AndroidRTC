@@ -373,8 +373,8 @@ public class WebRtcClient {
             localMS.addTrack(factory.createVideoTrack("ARDAMSv0", videoSource));
         }
 
-        AudioSource audioSource = factory.createAudioSource(new MediaConstraints());
-        localMS.addTrack(factory.createAudioTrack("ARDAMSa0", audioSource));
+//        AudioSource audioSource = factory.createAudioSource(new MediaConstraints());
+//        localMS.addTrack(factory.createAudioTrack("ARDAMSa0", audioSource));
 
         mListener.onLocalStream(localMS);
     }
